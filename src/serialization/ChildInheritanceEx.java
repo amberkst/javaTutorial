@@ -39,11 +39,11 @@ public class ChildInheritanceEx {
 		elephant.animalName = "Tiger";
 		elephant.elephantName = "chotaBaghira";
 
-		FileOutputStream fs = new FileOutputStream("Elephnat.txt");
+		FileOutputStream fs = new FileOutputStream("Elephant.txt");
 		ObjectOutputStream obj = new ObjectOutputStream(fs);
 		obj.writeObject(elephant);
 
-		FileInputStream file = new FileInputStream("Elephnat.txt");
+		FileInputStream file = new FileInputStream("Elephant.txt");
 		ObjectInputStream objIn = new ObjectInputStream(file);
 		Elephant retrive = (Elephant) objIn.readObject();
 		System.out.println(retrive);
